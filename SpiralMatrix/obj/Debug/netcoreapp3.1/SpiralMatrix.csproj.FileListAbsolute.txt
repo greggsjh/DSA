@@ -1,0 +1,10 @@
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/bin/Debug/netcoreapp3.1/SpiralMatrix.deps.json
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/bin/Debug/netcoreapp3.1/SpiralMatrix.runtimeconfig.json
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/bin/Debug/netcoreapp3.1/SpiralMatrix.runtimeconfig.dev.json
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/bin/Debug/netcoreapp3.1/SpiralMatrix.dll
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/bin/Debug/netcoreapp3.1/SpiralMatrix.pdb
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/obj/Debug/netcoreapp3.1/SpiralMatrix.csprojAssemblyReference.cache
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/obj/Debug/netcoreapp3.1/SpiralMatrix.AssemblyInfoInputs.cache
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/obj/Debug/netcoreapp3.1/SpiralMatrix.AssemblyInfo.cs
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/obj/Debug/netcoreapp3.1/SpiralMatrix.dll
+/Users/jamisongreggs/dev/DSA/SpiralMatrix/obj/Debug/netcoreapp3.1/SpiralMatrix.pdb

@@ -1,0 +1,10 @@
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/bin/Debug/netcoreapp3.1/SinglyLinkedList.deps.json
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/bin/Debug/netcoreapp3.1/SinglyLinkedList.runtimeconfig.json
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/bin/Debug/netcoreapp3.1/SinglyLinkedList.runtimeconfig.dev.json
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/bin/Debug/netcoreapp3.1/SinglyLinkedList.dll
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/bin/Debug/netcoreapp3.1/SinglyLinkedList.pdb
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/obj/Debug/netcoreapp3.1/SinglyLinkedList.csprojAssemblyReference.cache
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/obj/Debug/netcoreapp3.1/SinglyLinkedList.AssemblyInfoInputs.cache
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/obj/Debug/netcoreapp3.1/SinglyLinkedList.AssemblyInfo.cs
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/obj/Debug/netcoreapp3.1/SinglyLinkedList.dll
+/Users/jamisongreggs/dev/DSA/SinglyLinkedList/obj/Debug/netcoreapp3.1/SinglyLinkedList.pdb
