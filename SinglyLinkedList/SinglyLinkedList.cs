@@ -98,31 +98,50 @@ namespace DSA.SinglyLinkedList
 
         public void InsertBefore(Node<T> node, T value)
         {
-            var next = _head;
-            var prev = _head;
-            while (next.Next != null)
+            if (_head == null || node == _head)
             {
-                if (next == node)
+                Prepend(value);
+                return;
+            }
+
+            var current = _head;
+            var prev = _head;
+
+            while (current != null)
+            {
+                if (current == node)
                 {
                     var temp = new Node<T>(value);
                     prev.Next = temp;
-                    temp.Next = next;
+                    temp.Next = current;
+                    return;
                 }
 
-                prev = next;
-                next = next.Next;
+                prev = current;
+                current = current.Next;
             }
         }
 
         public void InsertAfter(Node<T> node, T value)
         {
-            var current = _head;
+            if (_head == null)
+            {
+                _head = node;
+                return;
+            }
 
-            while (current.Next != null)
+            if (node.Next == null)
+            {
+                Append(value);
+                return;
+            }
+
+            var current = _head;
+            while (current != null)
             {
                 if (current == node)
                 {
-                    var temp = current.Next.Next;
+                    var temp = current.Next;
                     current.Next = new Node<T>(value);
                     current.Next.Next = temp;
                 }

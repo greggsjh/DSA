@@ -90,3 +90,7 @@
 /Users/jamisongreggs/dev/DSA/TestHarness/obj/Debug/netcoreapp3.1/TestHarness.csproj.CopyComplete
 /Users/jamisongreggs/dev/DSA/TestHarness/obj/Debug/netcoreapp3.1/TestHarness.dll
 /Users/jamisongreggs/dev/DSA/TestHarness/obj/Debug/netcoreapp3.1/TestHarness.pdb
+/Users/jamisongreggs/dev/DSA/TestHarness/bin/Debug/netcoreapp3.1/SinglyLinkedList.dll
+/Users/jamisongreggs/dev/DSA/TestHarness/bin/Debug/netcoreapp3.1/SinglyLinkedList.pdb
+/Users/jamisongreggs/dev/DSA/TestHarness/bin/Debug/netcoreapp3.1/DoublyLinkedList.dll
+/Users/jamisongreggs/dev/DSA/TestHarness/bin/Debug/netcoreapp3.1/DoublyLinkedList.pdb

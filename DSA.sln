@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpiralMatrix", "SpiralMatri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHarness", "TestHarness\TestHarness.csproj", "{C1DF7073-F333-4104-B90D-B03B751F07FA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DoublyLinkedList", "DoublyLinkedList\DoublyLinkedList.csproj", "{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,5 +60,17 @@ Global
 		{C1DF7073-F333-4104-B90D-B03B751F07FA}.Release|x64.Build.0 = Release|Any CPU
 		{C1DF7073-F333-4104-B90D-B03B751F07FA}.Release|x86.ActiveCfg = Release|Any CPU
 		{C1DF7073-F333-4104-B90D-B03B751F07FA}.Release|x86.Build.0 = Release|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Debug|x64.Build.0 = Debug|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Debug|x86.Build.0 = Debug|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Release|x64.ActiveCfg = Release|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Release|x64.Build.0 = Release|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Release|x86.ActiveCfg = Release|Any CPU
+		{3A0B58B4-FB3F-4AC8-B357-3C0018B4DA7E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

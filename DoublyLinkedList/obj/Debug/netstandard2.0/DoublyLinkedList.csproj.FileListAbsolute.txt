@@ -1,0 +1,8 @@
+/Users/jamisongreggs/dev/DSA/DoublyLinkedList/bin/Debug/netstandard2.0/DoublyLinkedList.deps.json
+/Users/jamisongreggs/dev/DSA/DoublyLinkedList/bin/Debug/netstandard2.0/DoublyLinkedList.dll
+/Users/jamisongreggs/dev/DSA/DoublyLinkedList/bin/Debug/netstandard2.0/DoublyLinkedList.pdb
+/Users/jamisongreggs/dev/DSA/DoublyLinkedList/obj/Debug/netstandard2.0/DoublyLinkedList.csprojAssemblyReference.cache
+/Users/jamisongreggs/dev/DSA/DoublyLinkedList/obj/Debug/netstandard2.0/DoublyLinkedList.AssemblyInfoInputs.cache
+/Users/jamisongreggs/dev/DSA/DoublyLinkedList/obj/Debug/netstandard2.0/DoublyLinkedList.AssemblyInfo.cs
+/Users/jamisongreggs/dev/DSA/DoublyLinkedList/obj/Debug/netstandard2.0/DoublyLinkedList.dll
+/Users/jamisongreggs/dev/DSA/DoublyLinkedList/obj/Debug/netstandard2.0/DoublyLinkedList.pdb
