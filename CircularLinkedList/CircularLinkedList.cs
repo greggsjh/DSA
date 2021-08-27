@@ -1,7 +1,9 @@
-﻿using System;
-
-namespace DSA.CircularLinkedList
+﻿namespace DSA.CircularLinkedList
 {
+    /// <summary>
+    /// A circular doubly linked list that holds values of type T
+    /// </summary>
+    /// <typeparam name="T">The type of values contained in the list</typeparam>
     public class CircularLinkedList<T>
     {
         private Node<T> _head;
@@ -20,7 +22,166 @@ namespace DSA.CircularLinkedList
 
         public CircularLinkedList()
         {
+            _head = null;
+            _tail = null;
+        }
 
+        /// <summary>
+        /// Inserts a value of type T at the end of the linked list in O(1) time
+        /// </summary>
+        /// <param name="val">The value to be inserted</param>
+        /// <returns>The head of the Circular Linked List</returns>
+        public Node<T> Append(T val)
+        {
+            if (_head == null)
+            {
+                _head = _tail = new Node<T>(val);
+                return _head;
+            }
+            /*
+                1. Create new node
+                2. Set new node's previous pointer to the tail
+                3. Set new node's next pointer to the head
+                4. Set the tail's next pointer to the new new node
+                5. Set the head's previous pointer to the new node
+                6. Set the tail to the new node
+            */
+            var newNode = new Node<T>(val);
+            newNode.Prev = _tail;
+            newNode.Next = _head;
+            _tail.Next = newNode;
+            _head.Prev = newNode;
+            _tail = newNode;
+
+            return _head;
+        }
+
+        /// <summary>
+        /// Inserts a value of type T at the beginning of the linked list in O(1) time
+        /// </summary>        
+        /// <param name="val">The value to be inserted</param>
+        /// <returns>The head of the Circular Linked List</returns>
+        public Node<T> Prepend(T val)
+        {
+            if (_head == null)
+            {
+                _head = _tail = new Node<T>(val);
+                return _head;
+            }
+
+            /*
+                1. Create the new node
+                2. Set the new node's next pointer to the head
+                3. Set the new node's previous pointer to the tail
+                4. Set the head's previous pointer to the new node
+                5. Set the tail's next pointer to the new node
+                6. Set the head to the new node 
+            */
+            var newNode = new Node<T>(val);
+            _head.Prev = newNode;
+            _tail.Next = newNode;
+            newNode.Next = _head;
+            newNode.Prev = _tail;
+            _head = newNode;
+
+            return _head;
+        }
+
+        /// <summary>
+        /// Gets the first occurrence of the value of type T in O(n) time
+        /// </summary>
+        /// <param name="val">The value to search for</param>
+        /// <returns>the node that holds the first occurrence of the value</returns>
+        public Node<T> GetNode(T val)
+        {
+            if (_head == null)
+                return null;
+
+            var current = _head;
+            bool isFirstTime = true;
+            while (current != _head || isFirstTime)
+            {
+                if (current.Value.Equals(val))
+                {
+                    return current;
+                }
+
+                current = current.Next;
+                isFirstTime = false;
+            }
+
+            return null;
+        }
+
+        /// <summary>
+        /// Deletes the first occurrence of the value of type T in O(n) time
+        /// </summary>
+        /// <param name="val">The value to be deleted</param>
+        /// <returns>The head of the Circular Linked List</returns>
+        public Node<T> Delete(T val)
+        {
+            if (GetNode(val) == null)
+            {
+                return _head;
+            }
+
+            if (_head == _tail)
+            {
+                _head = _tail = null;
+                return _head;
+            }
+
+            var current = _head;
+            var prev = _head;
+            bool isFirstTime = true;
+            while (current != _head || isFirstTime)
+            {
+                if (current.Value.Equals(val))
+                {
+                    if (current == _head)
+                    {
+                        prev.Prev.Next = current.Next;
+                        current.Next.Prev = prev.Prev;
+                        _head = current.Next;
+                        break;
+                    }
+
+                    prev.Next = current.Next;
+                    current.Next.Prev = prev;
+
+                    if (current == _tail) _tail = current.Prev;
+
+                    break;
+                }
+
+                prev = current;
+                current = current.Next;
+                isFirstTime = false;
+            }
+
+            return _head;
+        }
+
+        /// <summary>
+        /// Inserts new value of type T before the specified node in O(n) time
+        /// </summary>
+        /// <param name="node">The node to insert the new value before</param>
+        /// <param name="val">The value to be inserted</param>
+        /// <returns>The head of the Circular Linked List</returns>
+        public Node<T> InsertBefore(Node<T> node, T val)
+        {
+            return _head;
+        }
+
+        /// <summary>
+        /// Inserts new value of type T after the specified node in O(n) time
+        /// </summary>
+        /// <param name="node">The node to insert the new value after</param>
+        /// <param name="val">The value to be inserted</param>
+        /// <returns>The head of the Circular Linked List</returns>
+        public Node<T> InsertAfter(Node<T> node, T val)
+        {
+            return _head;
         }
 
         public class Node<TValue> where TValue : T
