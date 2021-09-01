@@ -148,17 +148,16 @@ namespace DSA.SinglyLinkedList
                 current = current.Next;
             }
         }
+    }
+    public class Node<TValue>
+    {
+        public Node<TValue> Next { get; set; }
+        public TValue Value { get; set; }
 
-        public class Node<TValue>
+        public Node(TValue value)
         {
-            public Node<TValue> Next { get; set; }
-            public TValue Value { get; set; }
-
-            public Node(TValue value)
-            {
-                Value = value;
-                Next = null;
-            }
+            Value = value;
+            Next = null;
         }
     }
 }

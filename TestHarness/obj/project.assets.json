@@ -2030,6 +2030,19 @@
           "lib/netstandard1.3/System.Xml.XPath.XmlDocument.dll": {}
         }
       },
+      "Algorithms/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SinglyLinkedList": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Algorithms.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Algorithms.dll": {}
+        }
+      },
       "CircularLinkedList/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2052,7 +2065,7 @@
       },
       "SinglyLinkedList/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.1",
+        "framework": ".NETStandard,Version=v2.0",
         "compile": {
           "bin/placeholder/SinglyLinkedList.dll": {}
         },
@@ -6817,6 +6830,11 @@
         "system.xml.xpath.xmldocument.nuspec"
       ]
     },
+    "Algorithms/1.0.0": {
+      "type": "project",
+      "path": "../Algorithms/Algorithms.csproj",
+      "msbuildProject": "../Algorithms/Algorithms.csproj"
+    },
     "CircularLinkedList/1.0.0": {
       "type": "project",
       "path": "../CircularLinkedList/CircularLinkedList.csproj",
@@ -6835,6 +6853,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Algorithms >= 1.0.0",
       "CircularLinkedList >= 1.0.0",
       "DoublyLinkedList >= 1.0.0",
       "MSTest.TestAdapter >= 2.0.0",
@@ -6872,6 +6891,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "/Users/jamisongreggs/dev/DSA/Algorithms/Algorithms.csproj": {
+              "projectPath": "/Users/jamisongreggs/dev/DSA/Algorithms/Algorithms.csproj"
+            },
             "/Users/jamisongreggs/dev/DSA/CircularLinkedList/CircularLinkedList.csproj": {
               "projectPath": "/Users/jamisongreggs/dev/DSA/CircularLinkedList/CircularLinkedList.csproj"
             },

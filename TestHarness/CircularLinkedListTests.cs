@@ -98,5 +98,52 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 2);
             Assert.AreEqual(_linkedList.Head.Value, 2);
         }
+
+        [TestMethod]
+        public void TestInsertBefore()
+        {
+            var targetNode = _linkedList.GetNode(3);
+
+            var head = _linkedList.InsertBefore(targetNode, 100);
+            Assert.IsNotNull(_linkedList.GetNode(100));
+            Assert.AreEqual(targetNode.Prev.Value, 100);
+            Assert.AreEqual(_linkedList.Tail.Value, 4);
+            Assert.AreEqual(_linkedList.Head.Value, 1);
+
+            head = _linkedList.InsertBefore(head, 101);
+            Assert.IsNotNull(_linkedList.GetNode(101));
+            Assert.AreEqual(_linkedList.Tail.Value, 4);
+            Assert.AreEqual(_linkedList.Head.Value, 101);
+
+            head = _linkedList.InsertBefore(_linkedList.Tail, 102);
+            Assert.IsNotNull(_linkedList.GetNode(102));
+            Assert.AreEqual(_linkedList.Tail.Prev.Value, 102);
+            Assert.AreEqual(_linkedList.Tail.Value, 4);
+            Assert.AreEqual(_linkedList.Head.Value, 101);
+        }
+
+        [TestMethod]
+        public void TestInsertAfter()
+        {
+            var targetNode = _linkedList.GetNode(3);
+
+            var head = _linkedList.InsertAfter(targetNode, 100);
+            Assert.IsNotNull(_linkedList.GetNode(100));
+            Assert.AreEqual(targetNode.Next.Value, 100);
+            Assert.AreEqual(_linkedList.Tail.Value, 4);
+            Assert.AreEqual(_linkedList.Head.Value, 1);
+
+            head = _linkedList.InsertAfter(head, 101);
+            Assert.IsNotNull(_linkedList.GetNode(101));
+            Assert.AreEqual(_linkedList.Tail.Value, 4);
+            Assert.AreEqual(_linkedList.Head.Value, 1);
+            Assert.AreEqual(head.Next.Value, 101);
+
+            head = _linkedList.InsertAfter(_linkedList.Tail, 102);
+            Assert.IsNotNull(_linkedList.GetNode(102));
+            Assert.AreEqual(_linkedList.Head.Prev.Value, 102);
+            Assert.AreEqual(_linkedList.Tail.Value, 102);
+            Assert.AreEqual(_linkedList.Head.Value, 1);
+        }
     }
 }

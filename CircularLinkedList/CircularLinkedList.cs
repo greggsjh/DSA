@@ -170,6 +170,40 @@
         /// <returns>The head of the Circular Linked List</returns>
         public Node<T> InsertBefore(Node<T> node, T val)
         {
+            if (_head == null)
+            {
+                _head = node;
+                return _head;
+            }
+
+            var newNode = new Node<T>(val);
+            if (node == _head)
+            {
+                newNode.Next = _head;
+                newNode.Prev = _tail;
+                _tail.Next = newNode;
+                _head.Prev = newNode;
+                _head = newNode;
+                return _head;
+            }
+
+            var current = _head;
+            bool isFirstTime = true;
+            while (current != _tail.Next || isFirstTime == true)
+            {
+                if (current == node)
+                {
+                    newNode.Next = current;
+                    newNode.Prev = current.Prev;
+                    current.Prev.Next = newNode;
+                    current.Prev = newNode;
+                    return _head;
+                }
+
+                current = current.Next;
+                isFirstTime = false;
+            }
+
             return _head;
         }
 
@@ -181,6 +215,39 @@
         /// <returns>The head of the Circular Linked List</returns>
         public Node<T> InsertAfter(Node<T> node, T val)
         {
+            if (_head == null)
+            {
+                _head = node;
+                return _head;
+            }
+
+            var newNode = new Node<T>(val);
+            if (_tail == node)
+            {
+                newNode.Next = _tail.Next;
+                newNode.Prev = _tail;
+                _tail.Next.Prev = newNode;
+                _tail.Next = newNode;
+                _tail = newNode;
+                return _head;
+            }
+
+            var current = _head;
+            bool isFirstTime = true;
+            while (current != _tail.Next || isFirstTime)
+            {
+                if (current == node)
+                {
+                    newNode.Next = current.Next;
+                    newNode.Prev = current;
+                    current.Next.Prev = newNode;
+                    current.Next = newNode;
+                    return _head;
+                }
+                current = current.Next;
+                isFirstTime = false;
+            }
+
             return _head;
         }
 
