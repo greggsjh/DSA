@@ -18,6 +18,7 @@
     <ProjectReference Include="..\DoublyLinkedList\DoublyLinkedList.csproj" />
     <ProjectReference Include="..\CircularLinkedList\CircularLinkedList.csproj" />
     <ProjectReference Include="..\Algorithms\Algorithms.csproj" />
+    <ProjectReference Include="..\Stack\Stack.csproj" />
   </ItemGroup>
 
 </Project>

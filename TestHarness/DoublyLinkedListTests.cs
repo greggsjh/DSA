@@ -17,7 +17,7 @@ namespace TestHarness
             _linkedList.Append(3);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestAppend()
         {
             var current = _linkedList.Head;
@@ -33,7 +33,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 3);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestPrepend()
         {
             _linkedList.Prepend(100);
@@ -48,7 +48,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 3);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestGet()
         {
             var current = _linkedList.Head;
@@ -68,7 +68,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 3);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestDelete()
         {
             var current = _linkedList.Head;
@@ -90,7 +90,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 3);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestDeleteHead()
         {
             var current = _linkedList.Head;
@@ -112,7 +112,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 3);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestDeleteTail()
         {
             var current = _linkedList.Head;
@@ -134,7 +134,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 2);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestInsertBefore()
         {
             var item = _linkedList.Get(2);
@@ -152,7 +152,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 3);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestInsertBeforeHead()
         {
             var item = _linkedList.Head;
@@ -170,7 +170,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 3);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestInsertAfter()
         {
             var item = _linkedList.Get(1);
@@ -188,7 +188,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 3);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("DoublyLinkedLists")]
         public void TestInsertAfterTail()
         {
             var item = _linkedList.Get(_linkedList.Tail.Value);

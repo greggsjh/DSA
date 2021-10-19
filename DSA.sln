@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularLinkedList", "Circu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{CA0FCEC9-9D85-42AA-8565-E8A6A5241889}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,5 +102,17 @@ Global
 		{CA0FCEC9-9D85-42AA-8565-E8A6A5241889}.Release|x64.Build.0 = Release|Any CPU
 		{CA0FCEC9-9D85-42AA-8565-E8A6A5241889}.Release|x86.ActiveCfg = Release|Any CPU
 		{CA0FCEC9-9D85-42AA-8565-E8A6A5241889}.Release|x86.Build.0 = Release|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Debug|x64.Build.0 = Debug|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Debug|x86.Build.0 = Debug|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Release|x64.ActiveCfg = Release|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Release|x64.Build.0 = Release|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Release|x86.ActiveCfg = Release|Any CPU
+		{38C44C21-BF07-4D2D-8FAC-9AE61BA0C465}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

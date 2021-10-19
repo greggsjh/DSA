@@ -15,6 +15,7 @@
           "MSTest.TestFramework": "2.0.0",
           "Microsoft.NET.Test.Sdk": "16.2.0",
           "SinglyLinkedList": "1.0.0",
+          "Stack": "1.0.0",
           "coverlet.collector": "1.0.1"
         },
         "runtime": {
@@ -1350,6 +1351,11 @@
         "runtime": {
           "SinglyLinkedList.dll": {}
         }
+      },
+      "Stack/1.0.0": {
+        "runtime": {
+          "Stack.dll": {}
+        }
       }
     }
   },
@@ -2110,6 +2116,11 @@
       "sha512": ""
     },
     "SinglyLinkedList/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stack/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

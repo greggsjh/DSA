@@ -98,3 +98,5 @@
 /Users/jamisongreggs/dev/DSA/TestHarness/bin/Debug/netcoreapp3.1/CircularLinkedList.pdb
 /Users/jamisongreggs/dev/DSA/TestHarness/bin/Debug/netcoreapp3.1/Algorithms.dll
 /Users/jamisongreggs/dev/DSA/TestHarness/bin/Debug/netcoreapp3.1/Algorithms.pdb
+/Users/jamisongreggs/dev/DSA/TestHarness/bin/Debug/netcoreapp3.1/Stack.dll
+/Users/jamisongreggs/dev/DSA/TestHarness/bin/Debug/netcoreapp3.1/Stack.pdb

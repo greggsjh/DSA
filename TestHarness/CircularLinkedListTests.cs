@@ -17,7 +17,7 @@ namespace TestHarness
             _linkedList.Append(4);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("CircularLinkedLists")]
         public void TestPrepend()
         {
             var head = _linkedList.Prepend(100);
@@ -34,7 +34,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 4);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("CircularLinkedLists")]
         public void TestAppend()
         {
             var head = _linkedList.Append(100);
@@ -50,7 +50,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Tail.Value, 100);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("CircularLinkedLists")]
         public void TestGet()
         {
             //Test get middle
@@ -76,7 +76,7 @@ namespace TestHarness
             Assert.AreEqual(item.Value, _linkedList.Head.Value);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("CircularLinkedLists")]
         public void TestDelete()
         {
             var head = _linkedList.Delete(3);
@@ -99,7 +99,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Head.Value, 2);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("CircularLinkedLists")]
         public void TestInsertBefore()
         {
             var targetNode = _linkedList.GetNode(3);
@@ -122,7 +122,7 @@ namespace TestHarness
             Assert.AreEqual(_linkedList.Head.Value, 101);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("CircularLinkedLists")]
         public void TestInsertAfter()
         {
             var targetNode = _linkedList.GetNode(3);

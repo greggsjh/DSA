@@ -8,7 +8,7 @@ namespace TestHarness
     [TestClass]
     public class AlgorithmsTests
     {
-        [TestMethod]
+        [TestMethod, TestCategory("SlidingWindowPattern")]
         public void Test_FindMaximumSubArray_SlidingWindow()
         {
             int[] arr = new int[] { 2, 1, 5, 1, 3, 2 };
@@ -18,7 +18,7 @@ namespace TestHarness
             Assert.AreEqual(expectedResult, result);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("SlidingWindowPattern")]
         public void Test_FindMaximumSubArray2_SlidingWindow()
         {
             int[] arr = new int[] { 2, 3, 4, 1, 5 };
@@ -28,7 +28,7 @@ namespace TestHarness
             Assert.AreEqual(expectedResult, result);
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("SlidingWindowPattern")]
         public void Test_FindMaximumSubArray_BruteForce()
         {
             int[] arr = new int[] { 2, 1, 5, 1, 3, 2 };
@@ -39,7 +39,7 @@ namespace TestHarness
 
         }
 
-        [TestMethod]
+        [TestMethod, TestCategory("SlidingWindowPattern")]
         public void Test_FindMaximumSubArray2_BruteForce()
         {
             int[] arr = new int[] { 2, 3, 4, 1, 5 };
